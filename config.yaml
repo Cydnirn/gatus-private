@@ -1,0 +1,19 @@
+alerting:
+  github:
+    repository-url: "https://github.com/Cydnirn/gatus-private/"
+    token: ""
+
+endpoints:
+  - name: Leantime App
+    url: "https://api-example.com"
+    interval: 5m
+    conditions:
+      - "[STATUS] == 200"
+      - "[BODY].status == UP"
+      - "[RESPONSE_TIME] < 75"
+    alerts:
+      - type: github
+        failure-threshold: 2
+        success-threshold: 3
+        send-on-resolved: true
+        description: "Everything's burning AAAAAHHHHHHHHHHHHHHH"
