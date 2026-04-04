@@ -1,7 +1,7 @@
 alerting:
   github:
     repository-url: "https://github.com/Cydnirn/gatus-private/"
-    token: ""
+    token: IniTesting
 
 endpoints:
   - name: Leantime App
