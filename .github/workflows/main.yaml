@@ -3,7 +3,7 @@ name: Github Action deployment for Gatus
 on:
   push:
     branches:
-      - main
+      - prod
 permissions:
   id-token: write
 jobs:

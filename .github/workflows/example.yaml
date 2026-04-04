@@ -1,0 +1,24 @@
+name: Github example deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-leantime:
+    name: Deploy Leantime App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Echo Hello World
+        run: echo "Hello World"
+  deploy-gatus:
+    name: Deploy Gatus App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Echo Hello World
+        run: echo "Hello World"
