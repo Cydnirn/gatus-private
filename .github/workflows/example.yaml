@@ -36,7 +36,7 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker build -t gatus .
-          docker tag gatus:latest 284845684968.dkr.ecr.us-east-1.amazonaws.com/gatus:latest
-          docker tag gatus:latest 284845684968.dkr.ecr.us-east-1.amazonaws.com/gatus:${{ github.sha }}
-          docker push 284845684968.dkr.ecr.us-east-1.amazonaws.com/gatus:latest
-          docker push 284845684968.dkr.ecr.us-east-1.amazonaws.com/gatus:${{ github.sha }}
+          docker tag gatus:latest 284845684968.dkr.ecr.us-east-1.amazonaws.com/example/gatus:latest
+          docker tag gatus:latest 284845684968.dkr.ecr.us-east-1.amazonaws.com/example/gatus:${{ github.sha }}
+          docker push 284845684968.dkr.ecr.us-east-1.amazonaws.com/example/gatus:latest
+          docker push 284845684968.dkr.ecr.us-east-1.amazonaws.com/example/gatus:${{ github.sha }}
